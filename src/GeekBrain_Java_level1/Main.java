@@ -9,5 +9,12 @@ public class Main {
         workers[2] = new Worker("Наталья Александоровна Иванова","Секретарь","IvanovaNA@yandex.ru","+73156213",34781.54f,24);
         workers[3] = new Worker("Борис Михайлович Сергеев","Менеджер","SergeevBM@mail.ru","+748961235",47354.78f,43);
         workers[4] = new Worker("Александр Иванович Петров","Директор","PetrovAI@gmail.com","+7489345678",72364.14f,36);
+
+        for (int i = 0; i<workers.length;i++){
+            if (workers[i].getAge()>40){
+                workers[i].writeInfo();
+                System.out.println();
+            }
+        }
     }
 }
