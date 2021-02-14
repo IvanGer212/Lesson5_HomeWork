@@ -27,4 +27,16 @@ public class Worker {
     public void writeInfo() {
         System.out.printf(" Сотрудник: %s%n Должность: %s%n Адрес электронной почты: %s%n Номер телефона: %s%n Зарплата: %s%n возраст: %d%n", name, position, email, phoneNumber, sallary, age);
     }
+
+    @Override
+    public String toString() {
+        return "Worker{" +
+                "name='" + name + '\'' +
+                ", position='" + position + '\'' +
+                ", email='" + email + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                ", sallary=" + sallary +
+                ", age=" + age +
+                '}';
+    }
 }

@@ -12,7 +12,7 @@ public class Main {
 
         for (int i = 0; i<workers.length;i++){
             if (workers[i].getAge()>40){
-                workers[i].writeInfo();
+                System.out.println(workers[i]);
                 System.out.println();
             }
         }
